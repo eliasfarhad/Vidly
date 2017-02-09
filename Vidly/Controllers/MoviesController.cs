@@ -24,11 +24,11 @@ namespace Vidly.Controllers
 
 /*
   (1) Now with this method I'm going to create an instance of our movie model. Now because I'm using Resharper, Resharper automatically resolves the namespace
-      for this class. If you are nt using Resarper, you need to manually type 'using Vidly.Models'
+      for this class. If you are not using Resarper, you need to manually type 'using Vidly.Models'
 
   (2) In real world application we often get a model from a database but for now to keep things simple lets just focus on the core building blocks of MVC apps.
 
-  (3) Now here you can see that we are returning a 'View()' and the reason this is red is because Resharper is telling me this that this View file does not exist
+  (3) Now here you can see that we are returning a 'View()' and the reason this is red is because Resharper is telling me this View file does not exist
       in the application. So in the Solution Explorer under Views, look inside Movies folder, we don't have a View called Random. So right click on Movies, add
       Views, name this Random. You can check the Options: Create as a partial view. The partial view is not a complete page, it's like a widget that we can reuse on
       different views. But we are not interested in that, so leave that unchecked.

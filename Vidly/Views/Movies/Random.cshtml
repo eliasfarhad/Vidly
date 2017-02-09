@@ -14,14 +14,14 @@ Now if you are using Resharper, you don't need to remember the fully qualified n
 Every View has this property which gives us access to the model we pass to it in the controller. Now in the intellisense note that the type
 of the Model is dynamic. It's not a movie. So if I put a dot after Model, I cannot see the name property of this movie here.
 
-So at the top of the file we need to use a directive to specify the type of the model for this view. see the first lin eof comment-->
+So at the top of the file we need to use a directive to specify the type of the model for this view. see the first line of comment-->
 <h2>@Model.Name</h2>        <!--(1) Now you can put dot and see the Name and ID properties here. So let's render the name-->
 
 
 
 
 <!-- Here you can see a mixture of html code and c-sharp code prefixed with an 'at' sign. So at the top you have a block and inside the block we are
-setting two properties. On e is ViewBag.Title which is going to be the title of our page shown in the browser. The next settin gin the layout for
+setting two properties. One is ViewBag.Title which is going to be the title of our page shown in the browser. The next setting is the layout for
 View. After that code block we have just plain html.
 
 Now look View() is no longer red in the Random() method in the MoviesController.cs file, because now we have a view on the disk.
